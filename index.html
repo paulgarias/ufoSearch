@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ufoSightings</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+	<div class="container">
+		<section class="jumpbotron text-center">
+			<h1>ufo Sightings</h1>
+		</section>
+		<section>
+			<form>
+  				<div class="form-group">
+					<label for="MonthEntry">Month</label>
+					<input type="number" class="form-control" id="MonthEntry" placeholder="MM">
+				</div>
+  				<div class="form-group">
+					<label for="DayEntry">Day</label>
+					<input type="number" class="form-control" id="DayEntry" placeholder="DD">
+				</div>
+  				<div class="form-group">
+					<label for="YearEntry">Year</label>
+					<input type="number" class="form-control" id="YearEntry" placeholder="YYYY">
+				</div>
+				<button type="button" class="btn btn-primary" onclick="getDateInInput()">Submit</button>
+			</form>
+		</section>
+
+		<section class="text-center">
+			<div id="ufo-table" class="text-center"></div>
+		</section>
+
+	</div>
+
+</body>
+	<script src="js/data.js"></script>
+	<script src="js/ufosightings.js"></script>
+</html>
